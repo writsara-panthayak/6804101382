@@ -1,13 +1,9 @@
 <template>
   <q-page class="q-pa-md">
     <q-form class="q-gutter-md" style="max-width: 600px" @submit="onSubmit" @reset="onReset">
-    HEAD
-      <q-input filled v-model="name" label="Your name (writsata panthayak)" hint="Name and surname" />
-      <q-input filled type="number" v-model="age" label="Your age (19)" />
-     <q-toggle v-model="accept" label="I accept the license and terms (我接受许可和条款语言)" />
-      <q-input filled type="number" v-model="age" label="Your age *" />
-       Chinese-language
-      <q-toggle v-model="accept" label="I accept the license and terms" />
+      <q-input filled v-model="name" label="Your name (ชื่อ-สกุล) *" hint="Name and surname" />
+      <q-input filled type="number" v-model="age" label="Your age (อายุ) *" />
+      <q-toggle v-model="accept" label="I accept the license and terms (我接受许可和条款语言)" />
       <div>
         <q-btn label="SUBMIT" type="submit" color="primary" />
         <q-btn label="RESET" type="reset" color="primary" flat class="q-ml-sm" />
@@ -44,4 +40,3 @@ function onReset () {
   age.value = null
   accept.value = false
 }
-</script>
