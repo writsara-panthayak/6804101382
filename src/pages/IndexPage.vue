@@ -1,7 +1,7 @@
 <template>
   <q-page class="q-pa-md">
     <q-form class="q-gutter-md" style="max-width: 600px" @submit="onSubmit" @reset="onReset">
-      <q-input filled v-model="name" label="Your name *" hint="Name and surname" />
+     <q-toggle v-model="accept" label="I accept the license and terms (我接受许可和条款语言)" />
       <q-input filled type="number" v-model="age" label="Your age *" />
       <q-toggle v-model="accept" label="I accept the license and terms" />
       <div>
